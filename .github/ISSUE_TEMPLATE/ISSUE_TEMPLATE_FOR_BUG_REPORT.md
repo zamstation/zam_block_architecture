@@ -25,12 +25,3 @@ A clear and concise description of what happened.
 
 ### Expected result
 A clear and concise description of what you expected to happen.
-
-## Screenshots
-<< CAUTION: Remove this section if not used. >>
-
-<< CAUTION: Place the cursor after the bullet points and click on the 'Add Screenshots' button below so that the link gets displayed here. >>
-
-1. Screenshot link 1
-2. Screenshot link 2
-3. Screenshot link 3
