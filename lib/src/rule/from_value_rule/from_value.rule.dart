@@ -1,0 +1,21 @@
+import '../composite_rule/composite.rule.dart';
+import '../simple_rule/simple.rule.dart';
+
+///
+/// Succeeds when value is not null.
+///
+class FromValueRule<FACT extends Object, VALUE extends Object>
+    extends CompositeRule<FACT, VALUE> {
+  @override
+  final FACT fact;
+  final VALUE? Function(FACT fact) _valueGenerator;
+
+  const FromValueRule(this.fact, VALUE Function(FACT fact) valueGenerator)
+      : _valueGenerator = valueGenerator;
+
+  @override
+  build() {
+    final value = _valueGenerator(fact);
+    return SimpleRule(fact, value, (fact) => value != null);
+  }
+}

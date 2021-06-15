@@ -1,14 +1,15 @@
-name: package_name
+name: zam_block_architecture
 version: 0.0.1
-description: << Write your description here (not less than 60 characters). >>
+description: Architecture that bridges the gap between Business Analysts and Developers.
 homepage: https://zamstation.com
-repository: https://github.com/zamstation/package_name
+repository: https://github.com/zamstation/zam_block_architecture
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
+  zam_command_pattern: ^0.0.1
   zam_core: ^0.1.1
 
 dev_dependencies:
-  zam_test: ^0.0.2
+  zam_test: ^0.1.0
