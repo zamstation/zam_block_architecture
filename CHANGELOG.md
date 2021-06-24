@@ -1,5 +1,9 @@
-# 0.0.1
+# 0.1.0
+- Updated dependency: `zam_core 0.5.0`.
+- Updated dependency: `zam_command_pattern 0.1.0`.
+- Updated dependency: `dart sdk ">=2.13.0 <3.0.0"`.
 
+# 0.0.1
 - Includes `Block`, `Logic`, `Rule`, `Sanitizer`.
 - Includes `Block` utilities:
 	- `SingleChildBlock`

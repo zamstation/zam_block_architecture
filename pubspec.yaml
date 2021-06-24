@@ -1,5 +1,5 @@
 name: zam_block_architecture
-version: 0.0.1
+version: 0.1.0
 description: Architecture that bridges the gap between Business Analysts and Developers.
 homepage: https://zamstation.com
 repository: https://github.com/zamstation/zam_block_architecture
