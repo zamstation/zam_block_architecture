@@ -1,6 +1,7 @@
 ---
 name: Bug report
 about: Create a report to help us improve
+title: "Bug: "
 labels: bug
 assignees: amsakanna
 
@@ -10,7 +11,7 @@ assignees: amsakanna
 | Name | Description |
 | -----| ----------- |
 | Version | x.x.x |
-| Scope | File -> Class -> Method/Field |
+| Scope | Class/File/Dir |
 
 ## Description
 A clear and concise description of what the bug is.

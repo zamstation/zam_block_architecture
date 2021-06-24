@@ -3,7 +3,7 @@
 Architecture that bridges the gap between Business Analysts and Developers.
   
 [![Version](https://img.shields.io/pub/v/zam_block_architecture?color=%234287f5)](https://pub.dev/packages/zam_block_architecture)
-[![Build](https://github.com/zamstation/zam_block_architecture/actions/workflows/build.yml/badge.svg)](https://github.com/zamstation/zam_block_architecture/actions/workflows/deploy.yaml)
+[![Build](https://github.com/zamstation/zam_block_architecture/actions/workflows/build.yaml/badge.svg)](https://github.com/zamstation/zam_block_architecture/actions/workflows/build.yaml)
 [![Stars](https://img.shields.io/github/stars/zamstation/zam_block_architecture.svg?style=flat&logo=github&colorB=deeppink&label=stars)](https://github.com/zamstation/zam_block_architecture/stargazers)
 [![License](https://img.shields.io/github/license/zamstation/zam_block_architecture)](https://pub.dev/packages/zam_block_architecture/license)
 
