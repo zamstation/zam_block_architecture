@@ -27,14 +27,26 @@ class SatisfyAnyRule<FACT extends Object, VALUE extends Object>
   }
 }
 
+///
+/// Contains the rule that succeeded in addition to other data.
+///
 class SatisfyAnyRuleResponse<VALUE extends Object> extends RuleResponse<VALUE> {
+  ///
+  /// The rule that succeeded.
+  ///
   final Rule? successRule;
 
+  ///
+  /// Copies data from the given RuleResponse.
+  ///
   SatisfyAnyRuleResponse.fromRuleResponse(
     RuleResponse<VALUE> response,
     this.successRule,
   ) : super.fromSelf(response);
 
+  ///
+  /// Sets the succesRule to null.
+  ///
   SatisfyAnyRuleResponse.failed({VALUE? fallbackValue})
       : successRule = null,
         super.failed(fallbackValue: fallbackValue);
