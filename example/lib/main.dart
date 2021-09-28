@@ -30,7 +30,7 @@ void main() {
     UpperBoundRule(input, 20),
   ]);
   final ruleResponse = rule.execute();
-  print(ruleResponse.isSuccess); // true
+  print(ruleResponse.isSuccess); // prints true
 
   final input2 = 21;
   final rule2 = SatisfyAllRule(input2, input2, children: [
@@ -38,5 +38,5 @@ void main() {
     UpperBoundRule(input2, 20),
   ]);
   final ruleResponse2 = rule2.execute();
-  print(ruleResponse2.isSuccess); // false
+  print(ruleResponse2.isSuccess); // prints false
 }
