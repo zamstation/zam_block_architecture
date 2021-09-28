@@ -17,17 +17,13 @@ class SatisfyAnyRuleTest extends Test<int, bool> {
   }
 
   get cases => [
-        ValueTestCase(
+        BooleanTestCase.truthy(
           when: 'The value 13',
-          then: 'returns true',
           input: 13,
-          output: true,
         ),
-        ValueTestCase(
+        BooleanTestCase.falsy(
           when: 'The value 21',
-          then: 'is out of bounds',
           input: 21,
-          output: false,
         ),
       ];
 }
