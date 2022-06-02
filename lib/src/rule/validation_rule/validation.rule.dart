@@ -4,7 +4,7 @@ class ValidationRule<FACT extends Object, VALUE extends Object,
         EXCEPTION extends NamedException>
     extends SingleChildBlock<RuleResponse<VALUE>> implements Rule<FACT, VALUE> {
   @override
-  final fact;
+  final FACT fact;
   @override
   final Rule<FACT, VALUE> child;
   final EXCEPTION _exception;

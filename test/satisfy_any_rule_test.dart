@@ -8,6 +8,7 @@ void main() {
 }
 
 class SatisfyAnyRuleTest extends Test<int, bool> {
+  @override
   bool run(int input) {
     final rule = SatisfyAllRule(input, input, children: [
       OddNumberRule(input),
@@ -16,6 +17,7 @@ class SatisfyAnyRuleTest extends Test<int, bool> {
     return rule.execute().isSuccess;
   }
 
+  @override
   get cases => [
         BooleanTestCase.truthy(
           when: 'The value 13',

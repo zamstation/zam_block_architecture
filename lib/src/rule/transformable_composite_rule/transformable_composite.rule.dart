@@ -9,5 +9,5 @@ abstract class TransformableCompositeRule<FACT extends Object,
   Rule<FACT, INTER_OUTPUT> build();
 
   @override
-  RuleResponse<OUTPUT> transform(RuleResponse<INTER_OUTPUT> response);
+  RuleResponse<OUTPUT> transform(RuleResponse<INTER_OUTPUT> value);
 }

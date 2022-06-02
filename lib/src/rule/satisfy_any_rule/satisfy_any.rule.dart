@@ -7,7 +7,7 @@ import '../list_rule/list.rule.dart';
 class SatisfyAnyRule<FACT extends Object, VALUE extends Object>
     extends ListRule<FACT, VALUE> {
   @override
-  final fact;
+  final FACT fact;
   @override
   final Iterable<Rule<FACT, VALUE>> children;
 
@@ -20,8 +20,9 @@ class SatisfyAnyRule<FACT extends Object, VALUE extends Object>
   SatisfyAnyRuleResponse<VALUE> execute() {
     for (final rule in children) {
       final response = rule.execute();
-      if (response.isSuccess)
+      if (response.isSuccess) {
         return SatisfyAnyRuleResponse.fromRuleResponse(response, rule);
+      }
     }
     return SatisfyAnyRuleResponse.failed();
   }

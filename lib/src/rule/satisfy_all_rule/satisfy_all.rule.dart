@@ -7,7 +7,7 @@ import '../list_rule/list.rule.dart';
 class SatisfyAllRule<FACT extends Object, VALUE extends Object>
     extends ListRule<FACT, VALUE> {
   @override
-  final fact;
+  final FACT fact;
   @override
   final Iterable<Rule<FACT, VALUE>> children;
   final VALUE value;
