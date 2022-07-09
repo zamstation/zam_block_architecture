@@ -8,14 +8,13 @@ class FromValueRule<FACT extends Object, VALUE extends Object>
     extends CompositeRule<FACT, VALUE> {
   @override
   final FACT fact;
-  final VALUE? Function(FACT fact) _valueGenerator;
+  final VALUE? Function(FACT fact) valueGenerator;
 
-  const FromValueRule(this.fact, VALUE Function(FACT fact) valueGenerator)
-      : _valueGenerator = valueGenerator;
+  const FromValueRule(this.fact, this.valueGenerator);
 
   @override
   build() {
-    final value = _valueGenerator(fact);
+    final value = valueGenerator(fact);
     return SimpleRule(fact, value, (fact) => value != null);
   }
 }
